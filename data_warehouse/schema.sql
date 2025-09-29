@@ -10,8 +10,10 @@ CREATE TABLE IF NOT EXISTS images (
 -- Table for training runs
 CREATE TABLE IF NOT EXISTS training_runs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    end_time TIMESTAMP,
+    training_time REAL, -- in seconds
     accuracy REAL,
-    model_path TEXT
+    loss REAL,
+    history TEXT,
+    model_path TEXT,
+    hyperparams TEXT
 );
