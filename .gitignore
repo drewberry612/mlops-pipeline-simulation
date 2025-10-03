@@ -1,6 +1,6 @@
 data_warehouse/warehouse.db
-data_warehouse/__pycache__/
-data_warehouse/init_db.bat
-data_warehouse/db_viewer.bat
+*.bat
 notes.txt
-upload.bat
+file_tree.py
+tree_output.txt
+__pycache__/
